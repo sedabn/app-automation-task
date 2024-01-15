@@ -5,7 +5,8 @@ export const config = {
     before: function (capabilities, specs) {
         return { shortCircuit: true };
     },
-    port: 4723,
+    port: 4724,
+    path: '/',
     specs: [
         './specs/**/*.js'
     ],
@@ -24,7 +25,7 @@ export const config = {
     // Test Configurations
     logLevel: 'info',
     bail: 0,
-    baseUrl: 'http://localhost',
+    baseUrl: 'http://0.0.0.0',
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
